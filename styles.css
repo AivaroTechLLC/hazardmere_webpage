@@ -60,7 +60,7 @@ h1, h2, h3 { font-family: "Cinzel", Georgia, serif; }
 .brand img { border: 1px solid var(--border); border-radius: 7px; box-shadow: 0 8px 20px var(--shadow); }
 .site-nav { display: flex; align-items: center; gap: 4px; }
 .site-nav > a,
-.nav-dropdown > summary {
+.nav-dropdown-trigger {
   display: flex;
   min-height: 42px;
   align-items: center;
@@ -68,31 +68,40 @@ h1, h2, h3 { font-family: "Cinzel", Georgia, serif; }
   padding: 10px 14px;
   color: var(--muted);
   border: 1px solid transparent;
+  background: transparent;
   font-size: .9rem;
   font-weight: 600;
+  font-family: inherit;
   text-decoration: none;
   cursor: pointer;
-  list-style: none;
+  appearance: none;
 }
-.nav-dropdown > summary::-webkit-details-marker { display: none; }
 .site-nav > a:hover,
 .site-nav > a:focus-visible,
-.nav-dropdown > summary:hover,
-.nav-dropdown > summary:focus-visible,
-.nav-dropdown[open] > summary { color: var(--text); border-color: var(--border); background: rgb(255 255 255 / 3%); }
+.nav-dropdown-trigger:hover,
+.nav-dropdown-trigger:focus-visible,
+.nav-dropdown:hover > .nav-dropdown-trigger,
+.nav-dropdown:focus-within > .nav-dropdown-trigger { color: var(--text); border-color: var(--border); background: rgb(255 255 255 / 3%); }
 .site-nav .nav-steam { margin-left: 8px; color: #17130b; border-color: var(--accent); background: var(--accent); }
 .site-nav .nav-steam:hover, .site-nav .nav-steam:focus-visible { color: #17130b; background: var(--accent-light); }
 .nav-dropdown { position: relative; }
 .dropdown-panel {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   right: 0;
   width: 260px;
   padding: 8px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
   border: 1px solid var(--border);
   background: #181b15;
   box-shadow: 0 20px 50px var(--shadow);
+  transition: opacity .15s ease, transform .15s ease, visibility 0s linear .15s;
 }
+.nav-dropdown:hover .dropdown-panel,
+.nav-dropdown:focus-within .dropdown-panel { visibility: visible; opacity: 1; pointer-events: auto; transform: translateY(0); transition-delay: 0s; }
 .dropdown-panel a { display: grid; gap: 4px; padding: 13px; text-decoration: none; }
 .dropdown-panel a:hover, .dropdown-panel a:focus-visible { background: rgb(208 175 105 / 9%); }
 .dropdown-panel strong { font-family: "Cinzel", Georgia, serif; font-size: .9rem; }
@@ -172,7 +181,7 @@ footer { display: flex; width: min(1180px, calc(100% - 40px)); margin: 0 auto; p
   .site-header, main, footer { width: min(100% - 24px, 1180px); }
   .site-header { min-height: 68px; }
   .brand span { display: none; }
-  .site-nav > a, .nav-dropdown > summary { padding: 8px 9px; font-size: .82rem; }
+  .site-nav > a, .nav-dropdown-trigger { padding: 8px 9px; font-size: .82rem; }
   .site-nav .nav-steam { margin-left: 2px; }
   .dropdown-panel { position: fixed; top: 64px; right: 12px; left: 12px; width: auto; }
   .hero { gap: 32px; padding-top: 46px; }
