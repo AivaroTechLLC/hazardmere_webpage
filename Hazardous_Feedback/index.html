@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hazardous Employment Playtest Feedback</title>
+    <meta name="description" content="Hazardous Employment playtest feedback form" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Hazardous Employment Playtest Feedback</h1>
+        <p>Thanks for playing. This questionnaire should take about 6–8 minutes.</p>
+      </header>
+
+      <form id="feedback-form">
+        <section>
+          <h2>Your play session</h2>
+
+          <div class="columns">
+            <label>
+              Build or version <small>(optional)</small>
+              <input name="build" placeholder="If shown on the title screen" />
+            </label>
+
+            <label>
+              Roughly how long did you play?
+              <select name="duration" required>
+                <option value="">Select one</option>
+                <option>Under 10 minutes</option>
+                <option>10–19 minutes</option>
+                <option>20–30 minutes</option>
+                <option>31–45 minutes</option>
+                <option>More than 45 minutes</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            How did your session end?
+            <select name="ending" required>
+              <option value="">Select one</option>
+              <option>I reached the end of the demo</option>
+              <option>I failed or went broke</option>
+              <option>I chose to stop early</option>
+              <option>A bug or crash stopped me</option>
+            </select>
+          </label>
+
+          <fieldset class="choices">
+            <legend>When the demo stopped, what did you most want to do next?</legend>
+            <label><input type="checkbox" name="nextAction" value="Fix payroll" /> Fix payroll</label>
+            <label><input type="checkbox" name="nextAction" value="Heal or check on a worker" /> Heal or check on a worker</label>
+            <label><input type="checkbox" name="nextAction" value="Take another contract" /> Take another contract</label>
+            <label><input type="checkbox" name="nextAction" value="Change my roster or equipment" /> Change my roster or equipment</label>
+            <label><input type="checkbox" name="nextAction" value="Find out what the altar does" /> Find out what the altar does</label>
+            <label><input type="checkbox" name="nextAction" value="I felt finished" /> I felt finished</label>
+          </fieldset>
+
+          <label>
+            Based only on this demo, what do you think the full game adds?
+            <textarea name="fullGameExpectation" required></textarea>
+          </label>
+        </section>
+
+        <section>
+          <h2>Decisions and outcomes</h2>
+
+          <label>
+            Why did you choose one contract and the party you sent?
+            <textarea name="contractReasoning" required></textarea>
+          </label>
+
+          <label>
+            What preparation choice most clearly changed an outcome?
+            <textarea name="preparationImpact" required></textarea>
+          </label>
+
+          <label>
+            Which worker or incident do you remember most, and why? <small>(optional)</small>
+            <textarea name="memorableWorker"></textarea>
+          </label>
+
+          <label>
+            What felt confusing, hidden, or hard to read?
+            <textarea name="confusion" required></textarea>
+          </label>
+
+          <label>
+            When something went badly, did it feel fair and recoverable? Why or why not?
+            <textarea name="fairness" required></textarea>
+          </label>
+        </section>
+
+        <section>
+          <h2>Overall feedback</h2>
+
+          <fieldset class="rating">
+            <legend>How much did you enjoy the playtest?</legend>
+            <div><span>Not at all</span>
+              <label><input type="radio" name="enjoyment" value="1" required /> 1</label>
+              <label><input type="radio" name="enjoyment" value="2" /> 2</label>
+              <label><input type="radio" name="enjoyment" value="3" /> 3</label>
+              <label><input type="radio" name="enjoyment" value="4" /> 4</label>
+              <label><input type="radio" name="enjoyment" value="5" /> 5</label>
+              <span>A lot</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="rating">
+            <legend>How likely are you to come back for another run?</legend>
+            <div><span>Very unlikely</span>
+              <label><input type="radio" name="returnIntent" value="1" required /> 1</label>
+              <label><input type="radio" name="returnIntent" value="2" /> 2</label>
+              <label><input type="radio" name="returnIntent" value="3" /> 3</label>
+              <label><input type="radio" name="returnIntent" value="4" /> 4</label>
+              <label><input type="radio" name="returnIntent" value="5" /> 5</label>
+              <span>Very likely</span>
+            </div>
+          </fieldset>
+
+          <label>
+            Did you hit any bugs, crashes, or technical problems? <small>(optional)</small>
+            <textarea name="bugs" placeholder="For detailed bug reports, F11 in the game also includes a screenshot and system specs."></textarea>
+          </label>
+
+          <label>
+            What is the one thing you most want us to change—or protect? <small>(optional)</small>
+            <textarea name="protectOrChange"></textarea>
+          </label>
+
+          <div class="columns optional-contact">
+            <label>Name <small>(optional)</small><input name="name" autocomplete="name" /></label>
+            <label>Email <small>(optional)</small><input name="email" type="email" autocomplete="email" /></label>
+          </div>
+
+          <p class="privacy">Your answers and any optional contact information are sent to Hazardmere Games through Sentry.</p>
+
+          <label class="honeypot" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off" /></label>
+
+          <p id="form-status" role="status"></p>
+          <button type="submit">Submit feedback</button>
+        </section>
+      </form>
+    </main>
+
+    <script src="https://browser.sentry-cdn.com/10.70.0/bundle.min.js" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
