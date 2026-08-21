@@ -11,6 +11,8 @@ main { width: min(100% - 32px, 760px); margin: 0 auto; padding: 48px 0; }
 header { margin-bottom: 28px; }
 h1 { margin: 0 0 10px; font-size: clamp(30px, 6vw, 46px); line-height: 1.1; }
 header p { margin: 0; color: #666; font-size: 17px; line-height: 1.5; }
+.submission-policy { margin-top: 16px; padding: 14px 16px; border-left: 4px solid #7d2924; background: #fff; font-size: 14px; }
+.submission-policy strong { color: #7d2924; }
 form { display: grid; gap: 20px; }
 section { padding: 26px; border: 1px solid #d8d8d8; border-radius: 10px; background: white; }
 h2 { margin: 0 0 22px; font-size: 22px; }
@@ -36,6 +38,8 @@ legend { padding: 0; font-weight: 600; }
 #form-status { min-height: 20px; margin: 18px 0 0; color: #7d2924; font-weight: 600; }
 button { width: 100%; padding: 13px 18px; border: 0; border-radius: 6px; color: white; background: #7d2924; font: 700 16px Arial, sans-serif; cursor: pointer; }
 button:disabled { opacity: .6; cursor: wait; }
+.already-submitted { text-align: center; }
+.already-submitted p { margin: 0; color: #666; line-height: 1.6; }
 
 @media (max-width: 620px) {
   main { width: min(100% - 20px, 760px); padding: 30px 0; }

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hazardous Employment Playtest Feedback</title>
     <meta name="description" content="Hazardous Employment playtest feedback form" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
     <main>
       <header>
         <h1>Hazardous Employment Playtest Feedback</h1>
         <p>Thanks for playing. This questionnaire should take about 6–8 minutes.</p>
+        <p class="submission-policy"><strong>One response per playtester.</strong> To verify unique responses, this form records your IP address and an anonymous browser identifier.</p>
       </header>
 
       <form id="feedback-form">
@@ -135,7 +136,7 @@
             <label>Email <small>(optional)</small><input name="email" type="email" autocomplete="email" /></label>
           </div>
 
-          <p class="privacy">Your answers and any optional contact information are sent to Hazardmere Games through Sentry.</p>
+          <p class="privacy">Your answers, IP address, anonymous browser identifier, and any optional contact information are sent to Hazardmere Games through Sentry. The IP address and browser identifier are used to identify duplicate playtest responses.</p>
 
           <label class="honeypot" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off" /></label>
 
@@ -146,6 +147,6 @@
     </main>
 
     <script src="https://browser.sentry-cdn.com/10.70.0/bundle.min.js" crossorigin="anonymous"></script>
-    <script src="form.js"></script>
+    <script src="form.js?v=2"></script>
   </body>
 </html>
