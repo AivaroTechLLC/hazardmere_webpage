@@ -132,10 +132,10 @@ h1 { max-width: 720px; margin: 18px 0 0; font-size: clamp(3.2rem, 7vw, 6.5rem); 
 .button.secondary:hover, .button.secondary:focus-visible { border-color: var(--accent); background: rgb(208 175 105 / 8%); }
 .game-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; padding: 0; list-style: none; }
 .game-tags li { padding: 7px 10px; color: var(--muted); border: 1px solid rgb(255 255 255 / 9%); font-size: .76rem; }
-.steam-art { position: relative; border: 1px solid var(--border); background: var(--panel); box-shadow: 0 30px 70px var(--shadow); text-decoration: none; transform: rotate(.7deg); transition: transform .18s ease, border-color .18s ease; }
+.steam-art { position: relative; display: block; min-width: 0; border: 1px solid var(--border); background: var(--panel); box-shadow: 0 30px 70px var(--shadow); text-decoration: none; transform: rotate(.7deg); transition: transform .18s ease, border-color .18s ease; }
 .steam-art::before { position: absolute; z-index: -1; inset: 12px -12px -12px 12px; content: ""; border: 1px solid rgb(208 175 105 / 16%); }
 .steam-art:hover, .steam-art:focus-visible { border-color: var(--accent); transform: rotate(0) translateY(-3px); }
-.steam-art img { width: 100%; aspect-ratio: 900 / 516; object-fit: cover; }
+.steam-art img { width: 100%; height: auto; object-fit: contain; }
 
 .overview { padding: 94px 0; border-top: 1px solid var(--border); }
 .section-heading { display: grid; grid-template-columns: 1fr 1.2fr; column-gap: 50px; align-items: end; }
