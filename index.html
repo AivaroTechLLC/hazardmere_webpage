@@ -3,40 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hazardmere Games is a small independent game studio creating Hazardous Employment and future strange worlds, dark humor, and stories worth surviving.">
-  <title>Hazardmere Games</title>
+  <meta name="description" content="Hazardous Employment is a darkly comedic fantasy guild-management roguelite from Hazardmere Games, planned for April 2027.">
+  <meta property="og:title" content="Hazardmere Games — Hazardous Employment">
+  <meta property="og:description" content="Hire expendable heroes. Manage contracts, injuries, morale, payroll, and debt. Then file the paperwork.">
+  <meta property="og:image" content="https://www.hazardmeregames.com/HE_Trailer_End_Card.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hazardmeregames.com/">
+  <title>Hazardmere Games — Hazardous Employment</title>
   <link rel="icon" type="image/jpeg" href="hazardmere-icon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page-shell">
-    <section class="hero">
-      <img class="brand-icon" src="hazardmere-icon.jpg" alt="Hazardmere Games icon">
-      <div class="eyebrow">Independent Game Studio</div>
-      <h1>Hazardmere Games</h1>
-      <p class="studio-line">Creating strange worlds, dark humor, dangerous work, and stories worth surviving.</p>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Hazardmere Games home">
+      <img src="hazardmere-icon.jpg" alt="" width="44" height="44">
+      <span>Hazardmere Games</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#hazardous-employment">Games</a>
+      <details class="nav-dropdown">
+        <summary>Forms <span aria-hidden="true">▾</span></summary>
+        <div class="dropdown-panel">
+          <a href="/Hazardous_Feedback/">
+            <strong>Hazardous Employment</strong>
+            <span>Playtest feedback</span>
+          </a>
+        </div>
+      </details>
+      <a class="nav-steam" href="https://store.steampowered.com/app/4965400/Hazardous_Employment/?utm_source=hazardmeregames&amp;utm_campaign=studio_website" target="_blank" rel="noopener noreferrer">Steam</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hazardous-employment" aria-labelledby="game-title">
+      <div class="hero-copy">
+        <div class="eyebrow">In development · Planned for April 2027</div>
+        <h1 id="game-title">Hazardous Employment</h1>
+        <p class="hero-lead">A darkly comedic fantasy guild-management roguelite where you recruit, equip, and arrange adventurers—but never control them in battle.</p>
+        <p class="hero-punchline">The heroes fight monsters. <strong>You fight payroll.</strong></p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="https://store.steampowered.com/app/4965400/Hazardous_Employment/?utm_source=hazardmeregames&amp;utm_campaign=studio_website&amp;utm_content=hero_wishlist" target="_blank" rel="noopener noreferrer">
+            Wishlist on Steam
+          </a>
+          <a class="button secondary" href="#how-it-works">See how it works</a>
+        </div>
+
+        <ul class="game-tags" aria-label="Game features">
+          <li>Guild management</li>
+          <li>Auto battler</li>
+          <li>Roguelite</li>
+          <li>Single-player</li>
+        </ul>
+      </div>
+
+      <a class="steam-art" href="https://store.steampowered.com/app/4965400/Hazardous_Employment/?utm_source=hazardmeregames&amp;utm_campaign=studio_website&amp;utm_content=end_card_wishlist" target="_blank" rel="noopener noreferrer" aria-label="Wishlist Hazardous Employment on Steam">
+        <img src="HE_Trailer_End_Card.jpg" alt="Hazardous Employment — They fight, you file. Wishlist now on Steam." width="900" height="516">
+      </a>
     </section>
 
-    <section class="game-card" aria-labelledby="game-title">
-      <div class="status">Currently in development</div>
-      <h2 id="game-title">Hazardous Employment</h2>
-      <p class="game-description">
-        A darkly funny medieval management roguelike about contracts, payroll, injuries,
-        debt, and a workforce whose continued survival is not guaranteed.
-      </p>
-      <p class="tagline">Your safety is our lowest priority.</p>
+    <section class="overview" id="how-it-works" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <div class="eyebrow">Administrative judgment required</div>
+        <h2 id="overview-title">Prepare the expedition. Live with the paperwork.</h2>
+        <p>Your decisions determine who goes, where they stand, what they carry, and whether the company can afford the consequences.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article>
+          <span class="feature-number">01</span>
+          <h3>Assemble a qualified* team</h3>
+          <p>Recruit adventurers with different classes, potential, and wage expectations. Balance talent against a payroll that remains distressingly real.</p>
+        </article>
+        <article>
+          <span class="feature-number">02</span>
+          <h3>Accept reasonable contracts</h3>
+          <p>Study the danger, rewards, and staffing requirements. Arrange your formation and decide how much risk the guild can absorb.</p>
+        </article>
+        <article>
+          <span class="feature-number">03</span>
+          <h3>Observe the consequences</h3>
+          <p>Expeditions play out automatically. Survivors gain experience and injuries; casualties create vacancies, obligations, and occasionally useful heirlooms.</p>
+        </article>
+      </div>
+      <p class="qualification">*Qualifications are not independently verified.</p>
     </section>
 
-    <nav class="links" aria-label="Hazardmere Games links">
-      <a class="button primary" href="https://discord.gg/Yd7w4sb8d5" target="_blank" rel="noopener noreferrer">Join the Discord</a>
-      <a class="button" href="https://bsky.app/profile/hazardmeregames.bsky.social" target="_blank" rel="noopener noreferrer">Follow on Bluesky</a>
-      <a class="button" href="https://x.com/HazardmereGames" target="_blank" rel="noopener noreferrer">Follow on X</a>
+    <section class="wishlist-panel" aria-labelledby="wishlist-title">
+      <div>
+        <div class="eyebrow">Now on Steam</div>
+        <h2 id="wishlist-title">Your safety is our lowest priority.</h2>
+        <p>Wishlist Hazardous Employment to be notified when the guild opens for business.</p>
+      </div>
+      <a class="button primary" href="https://store.steampowered.com/app/4965400/Hazardous_Employment/?utm_source=hazardmeregames&amp;utm_campaign=studio_website&amp;utm_content=footer_wishlist" target="_blank" rel="noopener noreferrer">Wishlist on Steam</a>
+    </section>
+
+    <nav class="social-links" aria-label="Hazardmere Games social links">
+      <a href="https://discord.gg/Yd7w4sb8d5" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a href="https://bsky.app/profile/hazardmeregames.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+      <a href="https://x.com/HazardmereGames" target="_blank" rel="noopener noreferrer">X</a>
     </nav>
   </main>
 
-  <footer><p>© 2026 Hazardmere Games. All rights reserved.</p></footer>
+  <footer>
+    <span>© 2026 Hazardmere Games</span>
+    <span>All adventurers classified as independent contractors.</span>
+  </footer>
 </body>
 </html>
