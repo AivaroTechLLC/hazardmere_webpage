@@ -1,0 +1,35 @@
+HAZARDOUS EMPLOYMENT — FACTSHEET
+
+Developer: Hazardmere Games
+Publisher: Self-published
+Release: April 2027
+Platform: Windows PC
+Genre: Management roguelite / auto battler
+Players: Single-player
+Engine: Unity
+Availability: Public Steam Playtest
+
+SHORT DESCRIPTION
+Hazardous Employment is a darkly comedic fantasy guild-management roguelite where you recruit, equip, and arrange adventurers—but never control them in battle. The heroes fight monsters. You fight payroll.
+
+LONG DESCRIPTION
+Hazardous Employment is a darkly comedic fantasy guild-management roguelite where you hire expendable heroes, arrange their formation, equip them, and send them into automated expeditions. Once they leave the guildhall, there is no direct combat and no last-second rescue—management can only observe the consequences of its earlier decisions.
+
+Balance contracts, injuries, morale, payroll, and debt while turning barely qualified recruits into veterans worth worrying about. When the guild collapses, begin again with lasting advantages, recovered heirlooms, and slightly better-informed mistakes.
+
+KEY FEATURES
+- Recruit adventurers with distinct classes, potential, and wage expectations.
+- Build parties through formation, equipment, and contract-specific preparation.
+- Watch expeditions and combat resolve automatically from your management decisions.
+- Manage persistent injuries, morale, payroll, debt, and the occasional useful heirloom.
+- Fail forward through a roguelite loop built around hard choices and gallows humor.
+
+STREAMING AND VIDEO PERMISSION
+Content creators may stream, record, review, and monetize footage of Hazardous Employment. Press-kit assets may be used in coverage, articles, streams, and video thumbnails relating to the game.
+
+LINKS
+Steam: https://store.steampowered.com/app/4965400/Hazardous_Employment/
+Website: https://www.hazardmeregames.com/
+X: https://x.com/HazardmereGames
+Bluesky: https://bsky.app/profile/hazardmeregames.bsky.social
+Discord: https://discord.gg/Yd7w4sb8d5
